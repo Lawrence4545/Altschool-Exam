@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-3</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+
+    <form
+      name="contactForm"
+      action="#"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      <!--Name-->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <!--Email Scetion-->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <!--Date-->
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" /><br /><br />
+      <!--Message-->
+      <label for="message"> Your Message:</label>
+      <textarea id="text" name="text" rows="4" cols="50" required></textarea
+      ><br /><br />
+      <!--Priority-->
+      <label for="Priority">Priority:</label>
+      <select id="Priority" name="Priority">
+        <option value="low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="high">High</option></select
+      ><br /><br />
+      <!--<input type="Submit" value="Submit Here" />-->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
